@@ -1,1 +1,1 @@
-{"id":1,"from":1,"to":6,"closed":5,"rounds":[],"transfers":[],"carriedIn":[],"carriedOut":[],"root":"0x0000000000000000000000000000000000000000000000000000000000000000","status":"open","pushedAt":null,"holders":0,"instruments":[]}
+{"id":1,"from":1,"to":6,"closed":6,"rounds":[],"transfers":[],"carriedIn":[],"carriedOut":[],"root":"0x0000000000000000000000000000000000000000000000000000000000000000","status":"pushed","pushedAt":1790032200,"holders":0,"instruments":[]}

@@ -13,3 +13,6 @@
 2026-09-21T22:03:45.296Z round 5 exit 0 budget $9.35 · eligible 13 · excluded 15 (AMD:low-volume, AMZN:low-volume, BABA:low-volume, COIN:low-volume, CRWV:low-volume, DELL:low-volume, GME:thin-depth, INTC:low-volume, NBIS:low-volume, ORCL:low-volume, QQQ:low-volume, RKLB:low-volume, SGOV:low-volume, SNDK:low-volume, TSM:low-volume) | ROLLED: budget-floor
 2026-09-21T22:44:07.244Z shadow worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-21T22:44:07.245Z once: done, 0 failure(s)
+2026-09-21T23:14:49.208Z shadow worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-21T23:15:17.328Z round 6 exit 0 budget $0.00 · eligible 14 · excluded 13 (AMZN:low-volume, BABA:low-volume, COIN:low-volume, CRWV:low-volume, DELL:low-volume, GME:low-volume, MSFT:low-volume, MU:low-volume, ORCL:low-volume, QQQ:low-volume, RKLB:low-volume, SGOV:low-volume, SNDK:low-volume) | ROLLED: budget-floor
+2026-09-21T23:15:17.328Z once: done, 0 failure(s)
