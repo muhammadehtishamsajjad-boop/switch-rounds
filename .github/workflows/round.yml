@@ -1,0 +1,78 @@
+name: Switchboard worker
+
+# Runs the hourly Switchboard round on GitHub's runners and commits the round files to this repo.
+# The DApp (Vercel) reads them from raw.githubusercontent.com via ROUNDS_BASE_URL.
+#
+# Repository settings this workflow needs:
+#   Secrets  DAPP_REPO_TOKEN    fine-grained PAT, Contents: read on the private switch-dapp repo
+#            WORKER_PRIVATE_KEY the worker key (live mode only; never needed for shadow mode)
+#   Variables GENESIS           unix seconds round 1 opens (an hour boundary), same as the DApp's NEXT_PUBLIC_GENESIS
+#             LIVE              "true" once the contracts are deployed; anything else runs shadow mode
+#             NEXT_PUBLIC_REWARDS SwitchRewards address (live mode)
+#             TELEGRAM_CHAT_ID  optional, with secret TELEGRAM_BOT_TOKEN
+
+on:
+  schedule:
+    - cron: "4 * * * *" # ~4 min after each UTC hour: score (and, live, acquire + commit) the round that just sealed
+    - cron: "20 * * * *" # live mode: push any batch whose 10-minute delay has elapsed
+  workflow_dispatch:
+
+concurrency:
+  group: switchboard
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  round:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Round files (this repo)
+        uses: actions/checkout@v4
+        with:
+          path: data
+
+      - name: Worker code (switch-dapp)
+        uses: actions/checkout@v4
+        with:
+          repository: muhammadehtishamsajjad-boop/switch-dapp
+          token: ${{ secrets.DAPP_REPO_TOKEN }}
+          path: dapp
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: dapp/package-lock.json
+
+      - name: Install
+        working-directory: dapp
+        run: npm ci --no-audit --no-fund
+
+      - name: Run the sealed round(s) and any due pushes
+        working-directory: dapp
+        env:
+          ONCE: "true"
+          LIVE: ${{ vars.LIVE }}
+          GENESIS: ${{ vars.GENESIS }}
+          ROUNDS_DIR: ${{ github.workspace }}/data
+          NEXT_PUBLIC_REWARDS: ${{ vars.NEXT_PUBLIC_REWARDS }}
+          WORKER_PRIVATE_KEY: ${{ secrets.WORKER_PRIVATE_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
+          NODE_OPTIONS: --dns-result-order=ipv4first
+        run: npx tsx scripts/shadow-worker.mts
+
+      - name: Commit round files
+        if: always()
+        working-directory: data
+        run: |
+          git config user.name "switchboard-worker"
+          git config user.email "worker@switch-protocol.xyz"
+          git add -A
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "rounds: $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git push && exit 0; git pull --rebase && true; done
+          git push
