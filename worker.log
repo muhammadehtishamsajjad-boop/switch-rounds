@@ -67,3 +67,6 @@
 2026-09-22T13:17:07.373Z once: done, 0 failure(s)
 2026-09-22T13:31:18.721Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-22T13:31:19.959Z once: done, 0 failure(s)
+2026-09-22T14:16:03.019Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-22T14:16:45.706Z round 14 exit 0 budget $82.52 · eligible 19 · excluded 8 (AMZN:thin-depth, BABA:low-volume, CRWV:thin-depth, GME:thin-depth, MU:thin-depth, NBIS:thin-depth, ORCL:low-volume, QQQ:low-volume) | WINNER SNDK: 0.0434 units at $1,897 → 153 holders · root 0x29638cdf3c059958… · acquire 0xda08aa496a2dde7d8c6e873a617eda2c62f45695b32c3f2b4773e6366d8119bf
+2026-09-22T14:16:46.601Z once: done, 0 failure(s)
