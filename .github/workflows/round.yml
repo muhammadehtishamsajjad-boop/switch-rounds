@@ -9,6 +9,7 @@ name: Switchboard worker
 #   Variables GENESIS           unix seconds round 1 opens (an hour boundary), same as the DApp's NEXT_PUBLIC_GENESIS
 #             LIVE              "true" once the contracts are deployed; anything else runs shadow mode
 #             NEXT_PUBLIC_REWARDS SwitchRewards address (live mode)
+#             ROUND_SPEND_CAP_USD optional: max USD one round may spend while the budget is funded by hand (spreads a deposit over hours)
 #             TELEGRAM_CHAT_ID  optional, with secret TELEGRAM_BOT_TOKEN
 
 on:
@@ -59,6 +60,7 @@ jobs:
           GENESIS: ${{ vars.GENESIS }}
           ROUNDS_DIR: ${{ github.workspace }}/data
           NEXT_PUBLIC_REWARDS: ${{ vars.NEXT_PUBLIC_REWARDS }}
+          ROUND_SPEND_CAP_USD: ${{ vars.ROUND_SPEND_CAP_USD }}
           WORKER_PRIVATE_KEY: ${{ secrets.WORKER_PRIVATE_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ vars.TELEGRAM_CHAT_ID }}
