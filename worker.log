@@ -208,3 +208,6 @@
 2026-09-23T16:17:58.732Z once: done, 0 failure(s)
 2026-09-23T16:31:56.830Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-23T16:31:58.226Z once: done, 0 failure(s)
+2026-09-23T17:15:39.993Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-23T17:16:18.516Z round 41 exit 0 budget $25.44 · eligible 17 · excluded 11 (AMZN:low-volume, BABA:low-volume, COIN:low-volume, CRWV:low-volume, INTC:low-volume, NBIS:low-volume, ORCL:low-volume, QQQ:low-volume, RKLB:low-volume, SGOV:low-volume, TSM:low-volume) | WINNER CRCL: 0.2744 units at $92.72 → 153 holders · root 0x2ace130b670f2db6… · acquire 0x8ca5c37839cdf6ec777f5cdac7f736e42564e5ea3c3e8f328a67826cb7c1e1fe
+2026-09-23T17:16:19.303Z once: done, 0 failure(s)
