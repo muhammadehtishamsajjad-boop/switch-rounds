@@ -216,3 +216,6 @@
 2026-09-23T18:19:25.800Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-23T18:20:03.361Z round 42 exit 0 budget $0.00 · eligible 17 · excluded 9 (AMD:low-volume, AMZN:low-volume, CRWV:low-volume, INTC:low-volume, NBIS:low-volume, RKLB:low-volume, SGOV:low-volume, SNDK:low-volume, TSM:low-volume) | ROLLED: budget-floor
 2026-09-23T18:20:04.687Z once: done, 0 failure(s)
+2026-09-23T18:32:52.396Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-23T18:33:01.537Z 18:32:54 push batch 7 leaves 1–40 of 161: sent 0xa43a54e346cec5bb8cdd0f928ad370f92d82c989f55257a70ad46fe679cec8e9 | 18:32:56 push batch 7 leaves 1–40 of 161: confirmed in block 70730727, gas 2912801 | 18:32:56 push batch 7 leaves 41–80 of 161: sent 0x5dc5e3342daacd4ea9b011dc59a12960b31821ddb9b7efe4c0b09965ad2d7af7 | 18:32:57 push batch 7 leaves 41–80 of 161: confirmed in block 70730747, gas 282424
+2026-09-23T18:33:01.538Z once: done, 0 failure(s)
