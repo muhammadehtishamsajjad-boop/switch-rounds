@@ -224,3 +224,6 @@
 2026-09-23T19:14:34.209Z once: done, 0 failure(s)
 2026-09-23T19:28:25.074Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-23T19:28:26.196Z once: done, 0 failure(s)
+2026-09-23T20:16:52.342Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-23T20:17:25.581Z round 44 exit 0 budget $0.00 · eligible 15 · excluded 12 (AMD:low-volume, AMZN:low-volume, BABA:low-volume, COIN:low-volume, CRWV:low-volume, MU:low-volume, NBIS:low-volume, ORCL:low-volume, QQQ:low-volume, RKLB:low-volume, TSLA:low-volume, TSM:low-volume) | ROLLED: budget-floor
+2026-09-23T20:17:26.509Z once: done, 0 failure(s)
