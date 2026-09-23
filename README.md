@@ -16,7 +16,7 @@ Every number is recomputable from public chain data, and the chain holds each ro
 and allocation root, so an edited file fails verification:
 
 ```bash
-git clone https://github.com/muhammadehtishamsajjad-boop/switch-dapp && cd switch-dapp && npm ci
+git clone <this organisation>/switch-dapp && cd switch-dapp && npm ci
 npx tsx scripts/verify.mts ../switch-rounds/rounds/000001.json
 ```
 

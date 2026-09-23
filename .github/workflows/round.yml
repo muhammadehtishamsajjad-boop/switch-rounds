@@ -4,7 +4,7 @@ name: Switchboard worker
 # The DApp (Vercel) reads them from raw.githubusercontent.com via ROUNDS_BASE_URL.
 #
 # Repository settings this workflow needs:
-#   Secrets  DAPP_REPO_TOKEN    fine-grained PAT, Contents: read on the private switch-dapp repo
+#   Secrets  DAPP_DEPLOY_KEY    read-only deploy key of the private switch-dapp repo (same owner as this repo)
 #            WORKER_PRIVATE_KEY the worker key (live mode only; never needed for shadow mode)
 #   Variables GENESIS           unix seconds round 1 opens (an hour boundary), same as the DApp's NEXT_PUBLIC_GENESIS
 #             LIVE              "true" once the contracts are deployed; anything else runs shadow mode
@@ -37,8 +37,8 @@ jobs:
       - name: Worker code (switch-dapp)
         uses: actions/checkout@v4
         with:
-          repository: muhammadehtishamsajjad-boop/switch-dapp
-          token: ${{ secrets.DAPP_REPO_TOKEN }}
+          repository: ${{ github.repository_owner }}/switch-dapp
+          ssh-key: ${{ secrets.DAPP_DEPLOY_KEY }}
           path: dapp
 
       - uses: actions/setup-node@v4
