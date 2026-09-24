@@ -333,3 +333,5 @@
 2026-09-24T17:14:52.931Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-24T17:20:39.420Z round 65 exit 0 budget $49.99 · eligible 22 · excluded 4 (NBIS:low-volume, ORCL:low-volume, QQQ:low-volume, RKLB:low-volume) | ROLLED: slippage-bound
 2026-09-24T17:20:40.605Z once: done, 0 failure(s)
+2026-09-24T17:28:22.130Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-24T17:28:23.425Z once: done, 0 failure(s)
