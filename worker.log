@@ -442,3 +442,6 @@
 2026-09-25T14:17:50.827Z once: done, 0 failure(s)
 2026-09-25T14:31:45.647Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-25T14:31:47.328Z once: done, 0 failure(s)
+2026-09-25T15:17:28.656Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-25T15:20:41.012Z round 87 exit 0 budget $26.99 · eligible 20 · excluded 7 (AMZN:low-volume, NBIS:low-volume, ORCL:low-volume, QQQ:low-volume, RKLB:low-volume, SGOV:low-volume, TSM:low-volume) | WINNER USO: 0.1783 units at $151.35 → 148 holders · root 0x0d0062e68d51ff9d… · acquire 0xf195faa095dca1be2dd4d547f7cec7704a95630908962341abac2fd203700525
+2026-09-25T15:20:42.048Z once: done, 0 failure(s)
