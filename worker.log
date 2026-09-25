@@ -369,3 +369,6 @@
 2026-09-25T00:22:57.623Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-25T00:23:54.971Z round 72 exit 0 budget $49.99 · eligible 10 · excluded 16 (AMD:low-volume, AMZN:low-volume, COIN:low-volume, CRWV:low-volume, DELL:low-volume, GME:low-volume, INTC:low-volume, MSFT:low-volume, MU:low-volume, NBIS:low-volume, NVDA:thin-depth, ORCL:low-volume, RKLB:low-volume, SGOV:low-volume, SNDK:low-volume, TSM:low-volume) | WINNER MSTR: 0.3073 units at $162.66 → 143 holders · root 0x72fb4188a235a7d7… · acquire 
 2026-09-25T00:23:56.187Z once: done, 0 failure(s)
+2026-09-25T00:37:29.590Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-25T00:37:44.978Z 00:37:31 push batch 12 leaves 1–40 of 334: sent 0xd7576e36754ddafabc6a5b7b680ff7d975b91bf23f62cc45f9004500a99a0d21 | 00:37:32 push batch 12 leaves 1–40 of 334: confirmed in block 71804724, gas 2800976 | 00:37:32 push batch 12 leaves 41–80 of 334: sent 0x2b335551e2af181ea68316289b1b49bdda3fc2bda28b38ac4de968f5505842fb | 00:37:33 push batch 12 leaves 41–80 of 334: confirmed in block 71804735, gas 26
+2026-09-25T00:37:44.978Z once: done, 0 failure(s)
