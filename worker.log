@@ -432,3 +432,6 @@
 2026-09-25T12:20:50.731Z once: done, 0 failure(s)
 2026-09-25T12:35:57.761Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-25T12:35:59.118Z once: done, 0 failure(s)
+2026-09-25T13:17:27.275Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-25T13:18:06.464Z round 85 exit 0 budget $26.99 · eligible 14 · excluded 12 (AMD:low-volume, AMZN:low-volume, COIN:low-volume, CRWV:low-volume, GME:low-volume, GOOGL:thin-depth, INTC:low-volume, NBIS:low-volume, ORCL:low-volume, QQQ:low-volume, SNDK:low-volume, TSM:low-volume) | WINNER BABA: 0.2424 units at $111.36 → 147 holders · root 0x7df0973607e53c61… · acquire 0xc87f8e0aa381d8c0fe5655c0963d8f2db8e84b8c30d39cf8fc33d24f9c43ba80
+2026-09-25T13:18:07.520Z once: done, 0 failure(s)
