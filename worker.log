@@ -372,3 +372,6 @@
 2026-09-25T00:37:29.590Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-25T00:37:44.978Z 00:37:31 push batch 12 leaves 1–40 of 334: sent 0xd7576e36754ddafabc6a5b7b680ff7d975b91bf23f62cc45f9004500a99a0d21 | 00:37:32 push batch 12 leaves 1–40 of 334: confirmed in block 71804724, gas 2800976 | 00:37:32 push batch 12 leaves 41–80 of 334: sent 0x2b335551e2af181ea68316289b1b49bdda3fc2bda28b38ac4de968f5505842fb | 00:37:33 push batch 12 leaves 41–80 of 334: confirmed in block 71804735, gas 26
 2026-09-25T00:37:44.978Z once: done, 0 failure(s)
+2026-09-25T01:14:30.258Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-25T01:15:09.889Z round 73 exit 0 budget $22.19 · eligible 10 · excluded 18 (AMD:low-volume, AMZN:low-volume, BABA:low-volume, COIN:low-volume, CRWV:low-volume, DELL:low-volume, GME:low-volume, GOOGL:low-volume, INTC:low-volume, MSFT:low-volume, MU:low-volume, NBIS:low-volume, ORCL:low-volume, QQQ:low-volume, RKLB:low-volume, SGOV:low-volume, SNDK:low-volume, TSM:low-volume) | ROLLED: budget-floor
+2026-09-25T01:15:11.293Z once: done, 0 failure(s)
