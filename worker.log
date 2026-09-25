@@ -447,3 +447,6 @@
 2026-09-25T15:20:42.048Z once: done, 0 failure(s)
 2026-09-25T15:30:46.940Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
 2026-09-25T15:30:48.226Z once: done, 0 failure(s)
+2026-09-25T16:17:07.800Z LIVE worker started → /home/runner/work/switch-rounds/switch-rounds/data (once)
+2026-09-25T16:18:14.716Z round 88 exit 0 budget $26.99 · eligible 18 · excluded 8 (AMZN:low-volume, BABA:low-volume, CRWV:low-volume, NBIS:low-volume, ORCL:low-volume, SGOV:low-volume, SNDK:low-volume, TSM:low-volume) | WINNER AAPL: 0.0795 units at $339.47 → 150 holders · root 0xfc0412591622cf63… · acquire 0xfc84d8d1188d2d80ba2b25e5bc298862810ad1f73c6fdf8d1216710eee61db09
+2026-09-25T16:18:15.763Z once: done, 0 failure(s)
